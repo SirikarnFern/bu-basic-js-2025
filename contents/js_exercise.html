@@ -50,6 +50,53 @@
 
     <h2>Your solution for exercise</h2>
 
+    <input id="textFirstname" type="text" placeholder="Enter first name">
+    <input id="textLasttname" type="text" placeholder="Enter last name">
+
+    <input id="btnAdd" type="button" value="Add" onclick="add();">
+    <input id="btnClearInputs" type="button" value="Clear" onclick="clearInput();">
+
+
+    <table>
+        <thead>
+            <tr>
+                <td>
+                    First name 
+                </td>
+                <td>
+                    Last name
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Join
+                </td>
+                <td>
+                    Smith
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function add() {
+            firstname = document.getElementById('txtFirstname').value;
+            lastname = document.getElementById('txtLastname').value;   
+        }
+        function clearInputs(){
+            document.getElementById('txtFirstname').value = '';
+            document.getElementById('txtLastname').value = '';
+        }
+    </script>
+    
+
+
+
+
+
+
 </body>
 
 </html>
